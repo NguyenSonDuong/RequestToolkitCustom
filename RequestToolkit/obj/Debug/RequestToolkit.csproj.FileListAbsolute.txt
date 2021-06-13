@@ -1,0 +1,17 @@
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.csprojAssemblyReference.cache
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\MainWindow.g.cs
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\App.g.cs
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit_MarkupCompile.cache
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit_MarkupCompile.lref
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\bin\Debug\RequestToolkit.exe.config
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\bin\Debug\RequestToolkit.exe
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\bin\Debug\RequestToolkit.pdb
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\bin\Debug\ChilkatDotNet45.dll
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\MainWindow.baml
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.g.resources
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.Properties.Resources.resources
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.csproj.GenerateResource.cache
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.csproj.CoreCompileInputs.cache
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.csproj.CopyComplete
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.exe
+C:\Users\HoangKhanhHien\source\repos\RequestToolkit\RequestToolkit\obj\Debug\RequestToolkit.pdb
