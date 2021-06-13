@@ -70,6 +70,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="controller\API.cs" />
+    <Compile Include="controller\ListRequest.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -77,9 +78,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\ContentType.cs" />
+    <Compile Include="model\DataRequest.cs" />
     <Compile Include="model\ErrorContent.cs" />
     <Compile Include="model\HeaderObject.cs" />
     <Compile Include="model\HeaderRequest.cs" />
+    <Compile Include="model\RequestKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
