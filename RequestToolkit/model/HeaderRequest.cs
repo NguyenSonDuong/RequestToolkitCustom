@@ -52,6 +52,7 @@ namespace RequestToolkit.model
             {
                 throw new Exception(ErrorContent.ERROR_ZERO_LENGTH);
             }
+            http.ClearHeaders();
             foreach(HeaderObject headerObject in headers)
             {
                 http.SetRequestHeader(headerObject.Key, headerObject.Value);
