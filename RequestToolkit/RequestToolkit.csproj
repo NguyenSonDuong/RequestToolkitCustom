@@ -83,6 +83,7 @@
     <Compile Include="model\HeaderObject.cs" />
     <Compile Include="model\HeaderRequest.cs" />
     <Compile Include="model\RequestKey.cs" />
+    <Compile Include="model\TypeReplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

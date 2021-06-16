@@ -14,37 +14,52 @@ namespace RequestToolkit.model
         private String bodyRequest;
         private String responsive;
         private String headerResponsive;
+
+        private List<TypeReplate> typeReplates;
+        private bool isPost;
+        private String content_type;
+        private int postRequest = -1;
+
+        public string Url { get => url; set => url = value; }
+        public string HeaderRequest { get => headerRequest; set => headerRequest = value; }
+        public string BodyRequest { get => bodyRequest; set => bodyRequest = value; }
+        public string Responsive { get => responsive; set => responsive = value; }
+        public string HeaderResponsive { get => headerResponsive; set => headerResponsive = value; }
+        public int PostRequest { get => postRequest; set => postRequest = value; }
+        public string Content_type { get => content_type; set => content_type = value; }
+        public bool IsPost { get => isPost; set => isPost = value; }
+        public List<TypeReplate> TypeReplates { get => typeReplates; set => typeReplates = value; }
+
         public String GetData(String regex,String type, int pos = 0)
         {
             if (type.Equals(RequestKey.HEADER))
             {
-                return Regex.Match(headerResponsive, regex).Groups[pos].ToString();
+                return Regex.Match(HeaderResponsive, regex).Groups[pos].ToString();
             }else if (type.Equals(RequestKey.URL))
             {
-                return Regex.Match(url, regex).Groups[pos].ToString();
+                return Regex.Match(Url, regex).Groups[pos].ToString();
             }
             else if (type.Equals(RequestKey.RESPONSIVE))
             {
-                return Regex.Match(responsive, regex).Groups[pos].ToString();
+                return Regex.Match(Responsive, regex).Groups[pos].ToString();
             }
             return null;
         }
-        public String SetData(String regex,String data ,String type, int pos = 0)
+        public void SetData(String regex, String data ,String type)
         {
             Regex regexObj = new Regex(regex);
             if (type.Equals(RequestKey.HEADER))
             {
-                return R
+                HeaderRequest = regexObj.Replace(HeaderRequest, data);
             }
             else if (type.Equals(RequestKey.URL))
             {
-                return Regex.Match(url, regex).Groups[pos].ToString();
+                Url = regexObj.Replace(Url, data);
             }
-            else if (type.Equals(RequestKey.RESPONSIVE))
+            else if (type.Equals(RequestKey.BODY)) 
             {
-                return Regex.Match(responsive, regex).Groups[pos].ToString();
+                BodyRequest = regexObj.Replace(BodyRequest, data);
             }
-            return null;
         }
 
     }

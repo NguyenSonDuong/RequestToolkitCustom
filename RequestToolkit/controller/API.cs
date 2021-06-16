@@ -45,18 +45,18 @@ namespace RequestToolkit.controller
             API api = new API(isSaveCookie, isFollowLink);
             return api;
         }
-        public Chilkat.HttpResponse POST(string content_type,String url, String header, String body)
+        public Chilkat.HttpResponse POST(string content_type,DataRequest data)
         {
             switch (content_type)
             {
                 case "application/json":
-                    return RequestJSON(url, header, body);
+                    return RequestJSON(data.Url, data.HeaderRequest, data.BodyRequest);
                 case "application/x-www-form-urlencoded":
-                    return RequestUrlEncode(url, header, body);
+                    return RequestUrlEncode(data.Url, data.HeaderRequest, data.BodyRequest);
                 case "multipart/form-data":
-                    return RequestFormData(url, header, body);
+                    return RequestFormData(data.Url, data.HeaderRequest, data.BodyRequest);
                 case "text/plane; charset=utf-8":
-                    return RequestTextPlane(url, header, body);
+                    return RequestTextPlane(data.Url, data.HeaderRequest, data.BodyRequest);
                 default:
                     throw new Exception(ErrorContent.ERROR_CONTENT_TYPE_NO_MATCH);
             }
